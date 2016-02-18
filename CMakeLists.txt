@@ -11,7 +11,7 @@ add_executable(MyProject main.c)
 find_package(SDL2 REQUIRED)
 if (SDL2_FOUND)
   include_directories(${SDL2_INCLUDE_DIR})
-  target_link_libraries (MyProject ${SDL2_LIBRARIES})
+  target_link_libraries (MyProject ${SDL2_LIBRARY})
 endif (SDL2_FOUND)
 
 #find_package(OpenGL REQUIRED)
